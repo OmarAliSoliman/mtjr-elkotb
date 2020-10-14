@@ -29,6 +29,66 @@ img {
   outline: 0;
 }
 
+.path {
+  text-align: right;
+  background-color: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+.path h5 {
+  font-weight: bold;
+}
+.path span::before {
+  font-family: "Font Awesome 5 Free";
+  margin-left: 6px;
+  margin-right: 6px;
+  content: "";
+  font-weight: 900;
+  font-size: 13px;
+  color: #000;
+}
+.path .first::before {
+  content: "" !important;
+}
+.path a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.path a:hover {
+  color: #999;
+}
+.path i {
+  font-size: 13px;
+}
+
+.pagination {
+  width: 20%;
+  margin: auto;
+  padding-left: 120px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.pagination .page-item {
+  text-align: center;
+}
+.pagination .page-item .page-link {
+  background-color: transparent !important;
+  padding: 0 !important;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #000;
+  margin-right: 5px;
+  border: 1px solid #041e41;
+}
+.pagination .active .page-link {
+  background-color: #041e41 !important;
+  border: 1px solid #041e41 !important;
+  color: #fff;
+}
+
 .top-header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -702,6 +762,888 @@ img {
   border-radius: 10px;
 }
 
+.login-rigister {
+  margin-bottom: 50px;
+}
+.login-rigister .login,
+.login-rigister .rigister {
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.login-rigister .rigister-login-form .form-group .form-control {
+  height: calc(1.5em + 0.75rem + 10px);
+  border-radius: 0;
+}
+.login-rigister .rigister-login-form .remember {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.login-rigister .rigister-login-form .btn {
+  color: #fff;
+  width: 100px;
+}
+.login-rigister .rigister-login-form .btn-login-div {
+  text-align: right;
+}
+.login-rigister .rigister-login-form .btn-submit {
+  text-align: right;
+}
+.login-rigister .rigister-login-form .btn-login {
+  background-color: #88cd02;
+  border: 1px solid #88cd02;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  width: 145px;
+  box-shadow: 0px 6px 2px 0px #79af10;
+}
+.login-rigister .rigister-login-form .btn-rigister {
+  background-color: #88cd02;
+  border: 1px solid #88cd02;
+  border-radius: 8px;
+  width: 145px;
+  box-shadow: 0px 6px 2px 0px #79af10;
+}
+.login-rigister .rigister-login-form .form-check .conditions {
+  color: #88cd02;
+  text-decoration: underline;
+}
+
+.search-result {
+  margin-top: 90px;
+}
+.search-result .filter .card .card-header {
+  text-align: center;
+  border: 1px solid #ededed;
+  padding: 20px;
+}
+.search-result .filter .panel-title {
+  position: relative;
+  font-size: 17px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.search-result .filter .panel-title::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  color: #40a944;
+  top: -2px;
+  left: 0px;
+  position: absolute;
+}
+.search-result .filter .panel-title[aria-expanded=true]::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.search-result .filter .panel-collapse {
+  padding-top: 20px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.search-result .filter .panel-collapse .container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.search-result .filter .panel-collapse .rate i {
+  color: #041e41;
+}
+.search-result .filter .panel-collapse .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.search-result .filter .panel-collapse .checkmark {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+.search-result .filter .panel-collapse .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.search-result .filter .panel-collapse .container input:checked ~ .checkmark {
+  background-color: #88cd02;
+}
+.search-result .filter .panel-collapse .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.search-result .filter .panel-collapse .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.search-result .filter .panel-collapse .container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 9px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.search-result .filter .btn {
+  background-color: #88cd02;
+  color: #fff;
+  margin-top: 50px;
+  box-shadow: 0px 6px 2px 0px #79af10;
+}
+.search-result .result .card-header {
+  text-align: center;
+  border: 1px solid #ededed;
+  height: 69px;
+}
+.search-result .result .card-header select {
+  border: 0;
+  background-color: transparent;
+}
+.search-result .result .card-header h6 {
+  line-height: 35px;
+}
+.search-result .result .card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 0;
+}
+.search-result .result .card .card-img-parent {
+  position: relative;
+  padding: 15px;
+}
+.search-result .result .card .card-img-parent::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f6f6f6;
+}
+.search-result .result .card .disccount {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  width: 64px;
+  height: 64px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 6px;
+  line-height: 64px;
+  border-radius: 50%;
+  background-color: #88cd02;
+  color: #fff;
+  font-size: 13px;
+  z-index: 3;
+}
+.search-result .result .card .card-img {
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+}
+.search-result .result .card .card-body {
+  padding-top: 5px;
+  text-align: right;
+  position: relative;
+}
+.search-result .result .card .card-body .like-book {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+.search-result .result .card .card-body .active-like-book i {
+  color: #88cd02;
+}
+.search-result .result .card .card-body h6,
+.search-result .result .card .card-body h5 {
+  margin: 0;
+  font-size: 16px;
+}
+.search-result .result .card .card-body .category {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #88cd02;
+}
+.search-result .result .card .card-body .name {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #999;
+}
+.search-result .result .card .card-body .price {
+  font-size: 15px;
+  color: #88cd02;
+  font-weight: bold;
+}
+.search-result .result .card .card-body .rate {
+  float: left;
+}
+.search-result .result .card .card-body .rate i {
+  color: #88cd02;
+  font-size: 12px;
+}
+.search-result .result .card-head {
+  background-color: transparent !important;
+  margin-top: 0;
+  border: 1px solid #ededed;
+  padding: 0;
+}
+
+.cart-table {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.cart-table .table-image .img-w {
+  width: 12%;
+}
+.cart-table .table-image .td-bg-img {
+  background-color: #f5f5f5;
+}
+.cart-table .table-image th {
+  border: 0;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+.cart-table .table-image td,
+.cart-table .table-image th {
+  vertical-align: middle;
+}
+.cart-table .table-image img {
+  width: 150px;
+  height: 150px;
+}
+.cart-table .table-image .name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.cart-table .btn {
+  background-color: #88cd02;
+  color: #fff;
+}
+.cart-table i {
+  color: #999;
+}
+
+.steps-card {
+  margin-top: 45px;
+}
+.steps-card .card-header {
+  text-align: center;
+  padding: 20px;
+}
+.steps-card .card-header img {
+  width: 37px;
+  height: 28px;
+}
+.steps-card .card-header span {
+  color: #b4b4b4;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.steps-card .card-body {
+  padding-right: 140px;
+  padding-left: 140px;
+}
+.steps-card .card-body ul {
+  text-align: center;
+}
+.steps-card .card-body ul li .st-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 5px;
+  border: 1px solid #d9d9d9;
+}
+.steps-card .card-body ul li::after {
+  content: "";
+  margin-right: 60px;
+  font-size: 40px;
+  color: #d9d9d9;
+  position: absolute;
+}
+.steps-card .card-body ul .last::after {
+  content: "";
+}
+.steps-card .card-body .active .st-number {
+  background-color: #88cd02;
+  border: 1px solid #88cd02;
+  color: #fff;
+}
+
+.cart-table-by-step1 {
+  margin-top: 95px;
+  margin-bottom: 70px;
+}
+.cart-table-by-step1 .form-group {
+  margin-bottom: 0;
+}
+.cart-table-by-step1 .copon {
+  background-color: #fbfbfb;
+  padding: 30px;
+  padding-bottom: 30px;
+}
+.cart-table-by-step1 .total-price {
+  text-align: left;
+  padding-left: 90px;
+}
+.cart-table-by-step1 .total-price h5,
+.cart-table-by-step1 .total-price p {
+  margin: 0;
+}
+.cart-table-by-step1 .total-price p {
+  font-size: 25px;
+  color: #88cd02;
+}
+.cart-table-by-step1 .counter {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 125px;
+  margin-bottom: 10px !important;
+}
+.cart-table-by-step1 .number-input {
+  line-height: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  padding-top: 15px !important;
+  border: 0 !important;
+}
+.cart-table-by-step1 .decrementer {
+  background-color: transparent !important;
+  color: #555 !important;
+  line-height: 20px !important;
+  width: 40px !important;
+  height: 30px !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.cart-table-by-step1 .incrementer {
+  display: inline-block;
+  padding: 0 !important;
+  line-height: 20px !important;
+  border: 0 !important;
+  width: 40px !important;
+  height: 30px !important;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent !important;
+  color: #555 !important;
+  border: 0;
+}
+
+.options-buy-step1 {
+  margin-bottom: 80px;
+  margin-top: 30px;
+  text-align: left;
+}
+.options-buy-step1 a:first-child {
+  background-color: transparent;
+  border: 1px solid #88cd02;
+  color: #88cd02;
+  margin-left: 6px;
+}
+
+.pill-buers-info {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.pill-buers-info .buers-info .card {
+  border: 0;
+}
+.pill-buers-info .buers-info .card .card-header {
+  background-color: transparent;
+  position: relative;
+  border-bottom: 2px solid #f1f1f1;
+}
+.pill-buers-info .buers-info .card .card-header h5 {
+  font-weight: bold;
+}
+.pill-buers-info .buers-info .card .card-header .new-address {
+  position: absolute;
+  left: 1%;
+  color: #88cd02;
+  top: 50%;
+  transform: translate(-1%, -50%);
+}
+.pill-buers-info .buers-info .card .card-header .new-address i {
+  font-size: 13px;
+}
+.pill-buers-info .buers-info .card .card-body ul li {
+  margin-top: 30px;
+}
+.pill-buers-info .buers-info .card .card-body ul li .buer-q {
+  color: #b4b4b4;
+  font-size: 14px;
+}
+.pill-buers-info .buers-info .card .card-body ul li .buer-res {
+  font-size: 18px !important;
+  color: #444;
+}
+.pill-buers-info .bills .card {
+  border: 0;
+}
+.pill-buers-info .bills .card .card-header {
+  background-color: transparent;
+  position: relative;
+  border-bottom: 2px solid #f1f1f1;
+}
+.pill-buers-info .bills .card .card-header h5 {
+  font-weight: bold;
+}
+.pill-buers-info .bills .card .card-body .totla {
+  border-bottom: 2px dashed #707070;
+  padding-bottom: 20px;
+}
+.pill-buers-info .bills .card .card-body ul li {
+  margin-top: 20px;
+}
+.pill-buers-info .bills .card .card-body ul .price-float {
+  float: left;
+  font-weight: bold;
+}
+.pill-buers-info .bills .card .card-body ul .total-price {
+  color: #041e41;
+  font-size: 20px;
+}
+.pill-buers-info .bills .card .card-body .more-copon {
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+}
+.pill-buers-info .bills .card .card-body .btn-buy {
+  margin-top: 40px;
+}
+.pill-buers-info .bills .card .card-body .btn-buy .btn {
+  background-color: #88cd02;
+  color: #fff;
+  width: 190px;
+  font-size: 14px;
+}
+
+.buy-way {
+  margin-bottom: 70px;
+}
+.buy-way .head {
+  border-bottom: 2px solid #707070;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.buy-way .buy-way-form {
+  width: 60%;
+  margin: auto;
+}
+.buy-way .buy-way-form .chose-way {
+  text-align: center;
+}
+.buy-way .buy-way-form .chose-way a {
+  border: 1px solid #bababa;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.buy-way .buy-way-form .chose-way .active {
+  background-color: #88cd02;
+  color: #fff;
+  border: 1px solid #88cd02;
+}
+.buy-way .buy-way-form .form-control {
+  text-align: center;
+  height: calc(1.5em + 0.75rem + 10px);
+}
+.buy-way .buy-way-form input[type=date] {
+  background-color: #ddd;
+}
+.buy-way .buy-way-form .btn {
+  background-color: #88cd02;
+  color: #fff;
+  width: 200px;
+  font-size: 14px;
+}
+
+.done {
+  text-align: center;
+  margin-top: 112px;
+  margin-bottom: 100px;
+}
+.done img {
+  width: 140px;
+  height: 175px;
+  margin-bottom: 32px;
+}
+.done h5 {
+  font-weight: bold;
+  font-size: 23px;
+}
+.done p {
+  font-size: 14px;
+  width: 60%;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 50px;
+}
+.done .btn {
+  border: 1px solid #88cd02;
+  color: #88cd02;
+  background-color: #fff;
+  width: 30%;
+}
+
+.account {
+  margin-bottom: 90px;
+}
+.account .my-account-navs {
+  border: 1px solid #f5f5f5;
+  margin-top: 50px;
+  border-radius: 6px;
+}
+.account .my-account-navs .card-header {
+  background-color: #f5f5f5;
+  font-size: 18px;
+  border-bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  padding-right: 10px;
+}
+.account .my-account-navs .nav-link {
+  padding: 0px;
+  padding: 0 20px 0 20px;
+  line-height: 65px;
+  border-radius: 0;
+  color: #555;
+  font-size: 15px;
+  height: 65px;
+}
+.account .my-account-navs .nav-link img {
+  width: 20px;
+  margin-left: 5px;
+}
+.account .my-account-navs .active {
+  background-color: #f5f5f5;
+}
+.account .log-out {
+  border: 1px solid #f5f5f5;
+}
+.account .log-out .btn {
+  background-color: transparent;
+  color: #88cd02;
+  padding: 15px;
+  width: 100%;
+}
+.account .my-account-tabs {
+  margin-top: 50px;
+}
+.account .my-account-tabs .tab-header {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 55px;
+}
+.account .my-account-tabs #my-account .my-account-details .card {
+  height: 244px;
+  margin-bottom: 10px;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-header {
+  position: relative;
+  background-color: transparent;
+  color: #041e41;
+  border-bottom: 1px solid #dfdfdf;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-header h6 {
+  margin-top: 4px;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-header .edit {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  font-size: 14px;
+  color: #88cd02 !important;
+  text-decoration: none;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-body .namt {
+  margin: 0;
+  font-size: 18px;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-body .email {
+  font-size: 17px;
+  color: #525252;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-body .change-pass {
+  color: #88cd02;
+  text-decoration: none;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-body .change-pass::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 14px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.account .my-account-tabs #my-account .my-account-details .card .card-body .change-pass img {
+  width: 20px;
+  height: 20px;
+}
+.account .my-account-tabs #my-account .phones ul li img {
+  width: 35px;
+  height: 35px;
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.account .my-account-tabs #my-account .phones ul li .phone-number {
+  font-size: 14px;
+  color: #b4b4b4;
+}
+.account .my-account-tabs #my-account .phones ul li .number {
+  font-size: 17px;
+  color: #171717;
+}
+.account .my-account-tabs #my-product .card {
+  margin-top: 20px;
+}
+.account .my-account-tabs #my-product .card .card-header {
+  position: relative;
+  background-color: transparent;
+  border-bottom: 1px solid #dfdfdf;
+}
+.account .my-account-tabs #my-product .card .card-header h6 {
+  margin-top: 4px;
+}
+.account .my-account-tabs #my-product .card .card-header .delete {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  font-size: 14px;
+  color: #88cd02 !important;
+  text-decoration: none;
+}
+.account .my-account-tabs #my-product .card .card-body ul li {
+  width: 50%;
+  float: right;
+}
+.account .my-account-tabs #my-product .card .card-body ul li h5 {
+  font-size: 16px;
+  color: #525252;
+}
+.account .my-account-tabs #my-product .card .card-body ul li h5 .number,
+.account .my-account-tabs #my-product .card .card-body ul li h5 .date,
+.account .my-account-tabs #my-product .card .card-body ul li h5 .price {
+  font-weight: bold;
+  margin: 0 4px 0 4px;
+}
+.account .my-account-tabs #fav-product .card,
+.account .my-account-tabs .av-product-class .card {
+  position: relative;
+  border-radius: 15px !important;
+  margin-top: 20px;
+  padding: 18px;
+}
+.account .my-account-tabs #fav-product .card .heart,
+.account .my-account-tabs .av-product-class .card .heart {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 2;
+}
+.account .my-account-tabs #fav-product .card .heart .fa-heart,
+.account .my-account-tabs .av-product-class .card .heart .fa-heart {
+  color: #88cd02;
+}
+.account .my-account-tabs #fav-product .card img,
+.account .my-account-tabs .av-product-class .card img {
+  width: 90px;
+  height: 120px;
+}
+.account .my-account-tabs #fav-product .card .card-body,
+.account .my-account-tabs .av-product-class .card .card-body {
+  padding: 0;
+}
+.account .my-account-tabs #fav-product .card .card-body .card-title,
+.account .my-account-tabs .av-product-class .card .card-body .card-title {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0;
+}
+.account .my-account-tabs #fav-product .card .card-body .card-text,
+.account .my-account-tabs .av-product-class .card .card-body .card-text {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 17px;
+}
+.account .my-account-tabs #fav-product .card .card-body .card-text .price,
+.account .my-account-tabs .av-product-class .card .card-body .card-text .price {
+  margin: 0 4px 0 4px;
+  font-weight: bold;
+}
+.account .my-account-tabs #fav-product .card .card-body .rate i,
+.account .my-account-tabs .av-product-class .card .card-body .rate i {
+  font-size: 13px;
+  color: #88cd02;
+}
+.account .my-account-tabs #fav-product .card .card-body .btn-add-cart,
+.account .my-account-tabs .av-product-class .card .card-body .btn-add-cart {
+  position: absolute;
+  left: 18px;
+  bottom: 20px;
+  padding: 0;
+  border: 1px solid #88cd02;
+  color: #88cd02;
+  width: 130px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+}
+.account .my-account-tabs #fav-product .card .card-body .btn-add-cart i,
+.account .my-account-tabs .av-product-class .card .card-body .btn-add-cart i {
+  margin-left: 5px;
+  font-size: 13px;
+}
+.account .my-account-tabs #comment-rate .card {
+  position: relative;
+  border-radius: 15px !important;
+  margin-top: 20px;
+  padding: 18px;
+}
+.account .my-account-tabs #comment-rate .card .card-title {
+  margin-bottom: 13px;
+}
+.account .my-account-tabs #comment-rate .card .info {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 13px;
+}
+.account .my-account-tabs #comment-rate .card .info .price {
+  display: inline-block;
+  margin-right: 22px;
+}
+.account .my-account-tabs #comment-rate .btn-rate {
+  position: absolute;
+  left: 18px;
+  top: 5px;
+  padding: 0;
+  border: 1px solid #88cd02;
+  color: #88cd02;
+  width: 130px;
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+}
+
+.rate-product {
+  margin-bottom: 90px;
+}
+.rate-product .rate-product-card {
+  border: 1px solid #dfdfdf;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 6px;
+  padding: 34px 40px 40px 40px;
+}
+.rate-product .rate-product-card .rate-header {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 55px;
+}
+.rate-product .rate-product-card .rate-header:before {
+  content: "";
+  margin-left: 10px;
+  font-size: 20px;
+}
+.rate-product .rate-product-card .rate-header a {
+  color: #000;
+}
+.rate-product .rate-product-card .rate-img {
+  width: 265px;
+  height: 265px;
+}
+.rate-product .rate-product-card .rate-content {
+  padding-right: 10px;
+}
+.rate-product .rate-product-card .rate-content h6 {
+  font-size: 18px;
+}
+.rate-product .rate-product-card .rate-content h5 {
+  font-size: 19px;
+  font-weight: bold;
+}
+.rate-product .rate-product-card .rate-content .rate {
+  margin-top: 15px;
+}
+.rate-product .rate-product-card .rate-content .rate i {
+  color: #ddd;
+  font-size: 20px;
+}
+.rate-product .form-rate .form-group {
+  margin-top: 30px;
+}
+.rate-product .form-rate .form-group label {
+  color: #bababa;
+}
+.rate-product .form-rate .form-group .form-control {
+  border: 0;
+  border-bottom: 1px solid #999999;
+  border-radius: 0;
+  padding-bottom: 20px;
+}
+.rate-product .form-rate .form-group .form-control::placeholder {
+  font-size: 13px;
+  color: #bababa;
+}
+.rate-product .form-rate .btn-submit {
+  text-align: left;
+}
+.rate-product .form-rate .btn-submit .btn {
+  background-color: #88cd02;
+  color: #fff;
+  width: 170px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
 footer {
   margin-top: 0 !important;
   background-color: #324141;
@@ -850,6 +1792,11 @@ footer .footer-bottom .social i {
   .writters .writters-slider .slick-next {
     right: -10px;
   }
+
+  .steps-card .card-body {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 @media (max-width: 800px) {
   .navbar .call-mail {
@@ -881,6 +1828,23 @@ footer .footer-bottom .social i {
   footer .footer-bottom .social {
     padding-top: 0;
     margin-bottom: 20px;
+  }
+
+  .steps-card .card-body ul li::after {
+    margin-right: 27px;
+  }
+
+  .cart-table .btn {
+    margin-top: 20px;
+  }
+
+  .cart-table-by-step1 .total-price {
+    text-align: right;
+    margin-top: 20px;
+  }
+
+  .done p {
+    width: 100%;
   }
 }
 @media (max-width: 524px) {
@@ -942,6 +1906,73 @@ footer .footer-bottom .social i {
   footer .footer-top .support {
     text-align: right;
   }
+
+  .search-result .result {
+    margin-top: 15px;
+  }
+  .search-result .result .card-header {
+    height: auto;
+  }
+  .search-result .result .card-header h6 {
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  .cart-table .table-image td,
+.cart-table .table-image th {
+    font-size: 14px;
+  }
+  .cart-table .table-image img {
+    max-width: 129px;
+  }
+
+  .steps-card .card-body ul {
+    text-align: right;
+    padding-right: 10px;
+  }
+  .steps-card .card-body ul li {
+    margin-top: 10px;
+  }
+  .steps-card .card-body ul li::after {
+    content: "";
+  }
+
+  .buy-way .buy-way-form {
+    width: 100%;
+  }
+
+  .account .my-account-tabs #my-product .card .card-body ul li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .account .my-account-tabs #my-product .card .card-header .delete {
+    position: unset;
+  }
+
+  .account .my-account-tabs #fav-product .card .card-body .btn-add-cart,
+.account .my-account-tabs .av-product-class .card .card-body .btn-add-cart {
+    position: unset;
+    margin-top: 20px;
+  }
+
+  .account .my-account-tabs #fav-product .card,
+.account .my-account-tabs .av-product-class .card,
+.account .my-account-tabs #comment-rate .card {
+    text-align: center;
+  }
+
+  .account .my-account-tabs #fav-product .card img,
+.account .my-account-tabs .av-product-class .card img {
+    margin-bottom: 20px;
+    width: 130px;
+    height: 200px;
+  }
+
+  .account .my-account-tabs #comment-rate .btn-rate {
+    position: unset;
+    margin-top: 20px;
+  }
 }
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -951,6 +1982,23 @@ footer .footer-bottom .social i {
   .sidenav a {
     font-size: 18px;
   }
+}
+.steps-card .card-body ul li::after, .rate-product .rate-product-card .rate-header:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.account .my-account-tabs #my-account, .account .my-account-tabs #my-product, .account .my-account-tabs #fav-product,
+.account .my-account-tabs .av-product-class, .account .my-account-tabs #comment-rate {
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  padding: 34px 40px 40px 40px;
+}
+
+.account .my-account-tabs #my-account .my-account-details .card, .account .my-account-tabs #my-product .card, .account .my-account-tabs #fav-product .card,
+.account .my-account-tabs .av-product-class .card, .account .my-account-tabs #comment-rate .card {
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
