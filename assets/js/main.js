@@ -208,13 +208,22 @@ $(document).ready(function () {
     });
   }
 
-  if ("#example".length) {
+  if($(".about-slider").length){
+    $(".about-slider").slick({
+      dots: true,
+      arrows: false
+    });
+  }
+
+  if ($("#example").length) {
     $("#example").htmlNumberSpinner();
   }
 
-  if ("#example2".length) {
+  if ($("#example2").length) {
     $("#example2").htmlNumberSpinner();
   }
+
+
 });
 
 function openNav() {
